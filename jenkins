@@ -1,0 +1,23 @@
+https://github.com/Mounika-MBS/multibranch.git
+pipeline {
+        agent any
+	stages { 
+	    stage('Master branch') {
+	    steps {
+	      sh 'echo "this is master branch"'
+	      }
+	      }
+	      stage ('sprint1') {
+	      steps { 
+	      sh 'echo "sprint1 application"'
+	      }
+	      }
+
+	      stage("deploy app") {
+	      steps{
+	      sh 'echo "deploying application"'
+	      }
+	      }
+	      }
+	      }
+
