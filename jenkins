@@ -2,9 +2,9 @@ https://github.com/Mounika-MBS/multibranch.git
 pipeline {
         agent any
 	stages { 
-	    stage('Master branch') {
+	    stage('development branch') {
 	    steps {
-	      sh 'echo "this is master branch"'
+	      sh 'echo "this is development branch"'
 	      }
 	      }
 	      stage ('sprint1') {
